@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.blue.giovani.login.MainActivity">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="32dp">
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/txtUsuario" android:hint="Usuario"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberPassword"
+                android:ems="10"
+                android:id="@+id/txtSenha" android:hint="Senha"/>
+        <Button
+                android:text="Logar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/btnLogin" android:onClick="logar"/>
+        <Button
+                android:text="Registrar nova conta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/btnNovoRegistro" android:onClick="novoRegistro"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
