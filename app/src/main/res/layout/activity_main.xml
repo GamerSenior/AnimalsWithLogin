@@ -27,10 +27,12 @@
         <Button
                 android:text="Logar"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/btnLogin" android:onClick="logar"/>
+                android:layout_height="wrap_content" android:id="@+id/btnLogin" android:onClick="logar"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
         <Button
                 android:text="Registrar nova conta"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/btnNovoRegistro" android:onClick="novoRegistro"/>
+                android:layout_height="wrap_content" android:id="@+id/btnNovoRegistro" android:onClick="novoRegistro"
+                style="@style/Widget.AppCompat.Button.Borderless"/>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

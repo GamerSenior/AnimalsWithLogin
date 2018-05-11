@@ -20,6 +20,8 @@
         </activity>
         <activity android:name=".AnimaisActivity">
         </activity>
+        <activity android:name=".NovoAnimalActivity">
+        </activity>
     </application>
 
 </manifest>

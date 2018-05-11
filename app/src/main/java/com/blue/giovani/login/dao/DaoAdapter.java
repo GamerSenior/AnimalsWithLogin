@@ -20,7 +20,8 @@ public class DaoAdapter extends SQLiteOpenHelper {
 
     //Query de exlusão de todas as tabelas
     private static final String queryDelete[] = {
-            "DROP TABLE IF EXISTS usuarios;"
+            "DROP TABLE IF EXISTS usuarios;",
+            "DROP TABLE IF EXISTS animais"
     };
     //Query de criação de todas as tabelas
     private static final String query[] = {
@@ -32,7 +33,17 @@ public class DaoAdapter extends SQLiteOpenHelper {
                     + "email VARCHAR(30) NOT NULL,"
                     + "sexo VARCHAR(20) NOT NULL,"
                     + "senha VARCHAR(20) NOT NULL"
-                    + ");"
+                    + ");",
+            "CREATE TABLE IF NOT EXISTS animais (" +
+                    "id INTEGER PRIMARY KEY AUTOINCREMENT," +
+                    "nome VARCHAR(20) NOT NULL," +
+                    "raca VARCHAR(20) NOT NULL," +
+                    "idade INTEGER NOT NULL," +
+                    "cor VARCHAR(20) NOT NULL," +
+                    "dono VARCHAR(30) NOT NULL," +
+                    "cpf BIGINT NOT NULL," +
+                    "telefone BIGINT NOT NULL" +
+                    ");"
     };
 
     //Construtor DaoAdapter

@@ -10,6 +10,10 @@ public class Animal {
     private Long cpf;
     private Long telefone;
 
+    public Animal(long id) {
+        this.id = id;
+    }
+
     public Animal() {
     }
 
